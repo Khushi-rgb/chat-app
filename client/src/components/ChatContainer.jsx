@@ -65,7 +65,7 @@ const handleSummarize = async () => {
   .map((msg) => msg.text);
 
     const res = await fetch(
-      "http://localhost:5000/api/ai/summarize",
+      "https://chat-app-bq7g.onrender.com/api/ai/summarize",
       {
         method: "POST",
 
@@ -114,7 +114,7 @@ async (msgId, text) => {
   try {
 
     const res = await fetch(
-      "http://localhost:5000/api/ai/translate",
+      "https://chat-app-bq7g.onrender.com/api/ai/translate",
       {
 
         method: "POST",
